@@ -1,17 +1,22 @@
 {
-  "homepage": "https://Ducey101.github.io/Testing1",
-  "name": "my-app",
+  "name": "prop-match",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
-    "bootstrap": "^5.3.2",
-    "gh-pages": "^6.1.0",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-validator": "^7.0.1",
+    "mongodb": "^6.3.0",
+    "mongoose": "^8.0.3",
+    "mysql2": "^3.6.5",
     "react": "^18.2.0",
-    "react-bootstrap": "^2.9.1",
     "react-dom": "^18.2.0",
+    "react-router-dom": "^6.20.1",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
@@ -20,8 +25,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "serverstart": "node server/server.js",
+    "dev": "nodemon server/server.js"
   },
   "eslintConfig": {
     "extends": [
@@ -40,5 +45,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
   }
 }
